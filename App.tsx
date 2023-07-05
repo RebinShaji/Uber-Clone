@@ -2,7 +2,8 @@ import React from "react";
 import { StyleSheet, Text, View, ViewStyle } from "react-native";
 import { Provider } from 'react-redux';
 import HomeScreen from "./app/screens/HomeScreen";
-import LoginScreen from "./app/screens/LoginScreen"
+import LoginScreen from "./app/screens/LoginScreen";
+import SignupScreen from "./app/screens/SignupScreen";
 import { store } from "./store";
 
 

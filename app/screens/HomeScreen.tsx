@@ -1,5 +1,5 @@
 import React from "react";
-import { Image, SafeAreaView, StyleSheet, Text, View} from "react-native";
+import { Image, SafeAreaView, StyleSheet, View} from "react-native";
 import tw from "tailwind-react-native-classnames";
 
 const HomeScreen = () => {
