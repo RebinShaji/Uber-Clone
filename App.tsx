@@ -1,14 +1,15 @@
 import React from "react";
 import { StyleSheet, Text, View, ViewStyle } from "react-native";
-import { Provider } from "react-redux";
+import { Provider } from 'react-redux';
 import HomeScreen from "./app/screens/HomeScreen";
+import LoginScreen from "./app/screens/LoginScreen"
 import { store } from "./store";
 
 
 export default function App(): JSX.Element {
   return (
     <Provider store={store}>
-      <HomeScreen/>
+      <LoginScreen/>
     </Provider>
   );
 }
