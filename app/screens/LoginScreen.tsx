@@ -4,28 +4,20 @@ import { View, Text, TextInput, TouchableOpacity, StyleSheet, Image } from 'reac
 const Login = () => {
     return (
         <View style={styles.container}>
-             <Image
+            <Text style={styles.title}>Uber</Text>
+            <Image
                style={{
                width:200,
-               height: 100,
+               height: 200,
                marginLeft: 70,
+               bottom: 50,
                resizeMode: "contain",
              }}
-              source={require("../assets/logo.png")}
+              source={require("../assets/Drive.png")}
              />
-            <Text style={styles.title}>Login</Text>
-            <TextInput
-                style={styles.input}
-                placeholder="Email"
-                keyboardType="email-address"
-            />
-            <TextInput
-                style={styles.input}
-                placeholder="Password"
-                secureTextEntry={true}
-            />
+            <Text style={styles.title1}>Move with Safety</Text>
             <TouchableOpacity style={styles.button}>
-                <Text style={styles.buttonText}>Login</Text>
+                <Text style={styles.buttonText}>                   Get Started              ➔</Text>
             </TouchableOpacity>
         </View>
     );
@@ -34,33 +26,34 @@ const Login = () => {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#FFFFFF',
+        backgroundColor: '#0666FF',
         justifyContent: 'center',
-        paddingHorizontal: 30,
+        paddingHorizontal: 40,
     },
     title: {
-        fontSize: 24,
-        color: '#000000',
+        fontSize: 36,
+        fontFamily: 'sans-serif-light',
+        color: '#FFFFFF',
         fontWeight: 'bold',
-        marginBottom: 30,
-        marginLeft: 140,
+        marginBottom: 110,
+        marginLeft: 130,
     },
-    input: {
-        backgroundColor: '#FFFEEE',
-        borderRadius: 55,
-        padding: 10,
-        marginBottom: 10,
+    title1: {
+        fontSize: 36,
+        color: '#FFFFFF',
+        fontWeight: 'bold',
+        marginBottom: 110,
+        marginLeft: 20,
     },
     button: {
         backgroundColor: '#000000',
-        borderRadius: 25,
-        maxWidth: 100,
-        paddingVertical: 10,
-        marginLeft: 125,
+        borderRadius: 5,
+        paddingVertical: 20,
         alignItems: 'center',
-        top: 30,
+        top: 90,
     },
     buttonText: {
+        fontSize: 22,
         color: '#FFFFFF',
         fontWeight: 'bold',
     },
