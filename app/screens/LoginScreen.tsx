@@ -1,7 +1,12 @@
-import React from 'react';
-import { View, Text, TextInput, TouchableOpacity, StyleSheet, Image } from 'react-native';
+import React, {Component} from "react";
+import { View, Text, TouchableOpacity, StyleSheet, Image } from 'react-native';
+import RNBootSplash from "react-native-bootsplash";
 
-const Login = () => {
+export default class LoginScreen extends Component {
+    componentDidMount = () => {
+        RNBootSplash.hide({ fade: true, duration: 50 });
+    };
+      render() {  
     return (
         <View style={styles.container}>
             <Text style={styles.title}>Uber</Text>
@@ -21,7 +26,7 @@ const Login = () => {
             </TouchableOpacity>
         </View>
     );
-};
+}}
 
 const styles = StyleSheet.create({
     container: {
@@ -58,5 +63,3 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
     },
 });
-
-export default Login;
